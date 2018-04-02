@@ -10,23 +10,40 @@ The major feature of this application is its alerting feature; it alerts the use
 
 There are multiple features in this android application which includes the representation of information of various smartphone’s hardware including battery, Central processing Unit , storage devices (Internal storage and external storage if any present) and Random Access memory. Use can view these details of each hardware in an individual devoted tab in the application.
 
+
 In **Battery** Tab user can access following information :
+
 -Current Source
+
 -Health Status of Battery
+
 -Volatage Supply
+
 -Current Supply
+
 -Temperature of Battery
+
 -Capacity of Battery
+
 -Technology used inside Battery
 
+
 In **CPU** tab user can access following information :
+
 -CPU model and name of the processor
+
 -Number of cores in the processor
+
 -Maximum, Minimum and Current Frequency of Each cores
 
+
 In **RAM** tab user can access following information :
+
 -Uses Ram and Free Ram percentage is represented in form of Wheel Pie graph.
 
+
 In **Storage** tab user can access following information:
+
 -Internal storage - availabel space, free space and  total space.
+
 -External storage(if present) - availabel space, free space and  total space.
