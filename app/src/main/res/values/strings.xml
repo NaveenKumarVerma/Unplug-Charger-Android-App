@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">UnplugCharger</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="Battery_Level">Level</string>
+    <string name="Battery_Status">Status</string>
+    <string name="Charge_Source">Source</string>
+    <string name="Battery_Health">Health</string>
+    <string name="Battery_Voltage">Voltage</string>
+    <string name="Battery_Temperature">Temperature</string>
+    <string name="Battery_Capacity">Capacity</string>
+    <string name="Battery_Technology">Technology</string>
+    <string name="Battery_Current">Current</string>
+    <string name="Developers">Developers</string>
+    <string name="Service_Toggle">Start Service</string>
+
+    <string name="action_settings">Settings</string>
+</resources>

@@ -1,0 +1,234 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@drawable/background">
+
+    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:id="@+id/activity_main"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:paddingBottom="5dp"
+        android:paddingLeft="16dp"
+        android:paddingRight="16dp"
+        android:paddingTop = "5dp"
+        tools:context="unplugcharger.nmv.com.unplugcharger;">
+
+        <!--For Battery Level : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Level"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Battery_Level"
+            android:textSize="80dp"/>
+
+        <!--For BatteryProgressbar : Dynamic-->
+        <ProgressBar
+            android:id="@+id/Progress_Bar"
+            style="?android:attr/progressBarStyleHorizontal"
+            android:layout_width="200dp"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@id/Battery_Level"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Battery Status : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:layout_centerHorizontal="true"
+            android:text="@string/Battery_Status"
+            android:layout_below="@+id/Progress_Bar"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Source Text : Static-->
+        <TextView
+            android:id="@+id/Text_Source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Source"
+            android:layout_below="@+id/Battery_Status"
+            android:textSize="20dp"
+            android:layout_marginTop="20dp"/>
+        <!--For Charging Source : Dynamic-->
+        <TextView
+            android:id="@+id/Charge_Source"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Charge_Source"
+            android:layout_below="@+id/Battery_Status"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Text Health : Static-->
+        <TextView
+            android:id="@+id/Text_Health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Health"
+            android:layout_below="@+id/Text_Source"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <!--For Battery Health : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Health"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Battery_Health"
+            android:layout_below="@+id/Text_Source"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Text Voltage : Static-->
+        <TextView
+            android:id="@+id/Text_Voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Voltage"
+            android:layout_below="@+id/Text_Health"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <!--For Battery Voltage : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Voltage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Battery_Voltage"
+            android:layout_below="@+id/Text_Health"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Text Current : Static-->
+        <TextView
+            android:id="@+id/Text_Current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Current"
+            android:layout_below="@+id/Text_Voltage"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <!--For Battery Voltage : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Current"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Battery_Current"
+            android:layout_below="@+id/Text_Voltage"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Text Temperature : Static-->
+        <TextView
+            android:id="@+id/Text_Temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Temperature"
+            android:layout_below="@+id/Text_Current"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <!--For Battery Temperature : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Temperature"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Battery_Temperature"
+            android:layout_below="@+id/Text_Current"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Text Capacity: Static-->
+        <TextView
+            android:id="@+id/Text_Capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Capacity"
+            android:layout_below="@+id/Text_Temperature"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <!--For Battery Capacity : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Capacity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Battery_Capacity"
+            android:layout_below="@+id/Text_Temperature"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Text Technology: Static-->
+        <TextView
+            android:id="@+id/Text_Technology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text=" Technology"
+            android:layout_below="@+id/Text_Capacity"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+        <!--For Battery Technology : Dynamic-->
+        <TextView
+            android:id="@+id/Battery_Technology"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAlignment="center"
+            android:text="@string/Battery_Technology"
+            android:layout_below="@+id/Text_Capacity"
+            android:layout_alignParentRight="true"
+            android:textSize="20dp"
+            android:layout_marginTop="10dp"/>
+
+        <!--For Service Toggling Button-->
+        <Button
+            android:id="@+id/Servie_Toggle"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Service_Toggle"
+            android:onClick="Service"
+            android:layout_alignParentRight="true"
+            android:layout_below="@+id/Battery_Technology"
+            android:layout_marginTop="10dp"
+            android:visibility="invisible"/>
+
+        <!--just for output-->
+        <TextView
+            android:id="@+id/temp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/Battery_Technology"/>
+
+        <TextView
+            android:id="@+id/Developers"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/Developers"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentBottom="true"
+            android:textSize="20dp"
+            android:layout_marginTop="490dp"/>
+    </RelativeLayout>
+</ScrollView>
